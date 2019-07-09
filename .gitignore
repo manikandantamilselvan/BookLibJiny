@@ -1,10 +1,57 @@
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
+
+*.iml
+
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
+
+# User-specific stuff:
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/dictionaries
+
+# Sensitive or high-churn files:
+# .idea/dataSources.ids
+# .idea/dataSources.xml
+# .idea/sqlDataSources.xml
+# .idea/dynamic.xml
+# .idea/uiDesigner.xml
+
+# Gradle:
+# .idea/gradle.xml
+# .idea/libraries
+
+# Mongo Explorer plugin:
+# .idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
 build/
-DerivedData/
+DerivedData
 
 ## Various settings
 *.pbxuser
@@ -15,38 +62,27 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
+xcuserdata
+xcschememanagement
 
 ## Other
-*.moved-aside
 *.xccheckout
+*.moved-aside
+*.xcuserstate
 *.xcscmblueprint
 
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
-*.dSYM.zip
-*.dSYM
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-.build/
 
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 #
-# Pods/
+
+Pods/
 
 # Carthage
 #
@@ -55,14 +91,24 @@ playground.xcworkspace
 
 Carthage/Build
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+.idea
+node_modules
+bower_components
+dist
+tmp
+temp
+build
+.DS_Store
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.classpath
+.project
+.settings/
+weburls.contant.js

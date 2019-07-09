@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="dropdowncell" rowHeight="54" id="KGk-i7-Jjw" customClass="DropDownCell" customModule="CBPObserver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aa9-MW-GMj" userLabel="mainView">
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="53.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtA-o3-GaO">
+                                <rect key="frame" x="46" y="16.5" width="234" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yhB-S7-xjV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FRK-GL-A7l" customClass="Roundimage" customModule="CBPObserver" customModuleProvider="target">
+                                <rect key="frame" x="8" y="12" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="trn-2B-yRe"/>
+                                    <constraint firstAttribute="height" constant="30" id="trz-G1-wmM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-ob-LPt" customClass="Roundimage" customModule="CBPObserver" customModuleProvider="target">
+                                <rect key="frame" x="284" y="12" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="bnh-fs-nPt"/>
+                                    <constraint firstAttribute="height" constant="30" id="ypj-zX-DXS"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XW-Mq-dzw">
+                                <rect key="frame" x="46" y="16.5" width="234" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LG2-ZE-1FX">
+                                <rect key="frame" x="0.0" y="0.0" width="322" height="53.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LG2-ZE-1FX" secondAttribute="bottom" id="5yy-4m-p3Q"/>
+                            <constraint firstItem="LG2-ZE-1FX" firstAttribute="leading" secondItem="Aa9-MW-GMj" secondAttribute="leading" id="Fbk-Zt-gwG"/>
+                            <constraint firstItem="FRK-GL-A7l" firstAttribute="centerY" secondItem="Aa9-MW-GMj" secondAttribute="centerY" id="GAU-Tk-pVc"/>
+                            <constraint firstItem="5XW-Mq-dzw" firstAttribute="trailing" secondItem="rtA-o3-GaO" secondAttribute="trailing" id="HRH-ry-i0h"/>
+                            <constraint firstAttribute="trailing" secondItem="LG2-ZE-1FX" secondAttribute="trailing" id="I8y-02-NLs"/>
+                            <constraint firstItem="rtA-o3-GaO" firstAttribute="leading" secondItem="FRK-GL-A7l" secondAttribute="trailing" constant="8" id="KYT-gn-X5z"/>
+                            <constraint firstItem="5XW-Mq-dzw" firstAttribute="height" secondItem="rtA-o3-GaO" secondAttribute="height" id="NRj-wb-B9b"/>
+                            <constraint firstItem="FRK-GL-A7l" firstAttribute="leading" secondItem="Aa9-MW-GMj" secondAttribute="leading" constant="8" id="YCh-kQ-gek"/>
+                            <constraint firstItem="rtA-o3-GaO" firstAttribute="centerY" secondItem="FRK-GL-A7l" secondAttribute="centerY" id="ZbE-YW-38g"/>
+                            <constraint firstItem="5XW-Mq-dzw" firstAttribute="width" secondItem="rtA-o3-GaO" secondAttribute="width" id="bJI-Ru-qAf"/>
+                            <constraint firstAttribute="trailing" secondItem="cdW-ob-LPt" secondAttribute="trailing" constant="8" id="bN2-Rg-nkb"/>
+                            <constraint firstItem="5XW-Mq-dzw" firstAttribute="top" secondItem="rtA-o3-GaO" secondAttribute="top" id="eNf-do-LK7"/>
+                            <constraint firstItem="cdW-ob-LPt" firstAttribute="leading" secondItem="rtA-o3-GaO" secondAttribute="trailing" constant="4" id="fG3-Dd-OJp"/>
+                            <constraint firstItem="LG2-ZE-1FX" firstAttribute="top" secondItem="Aa9-MW-GMj" secondAttribute="top" id="gbN-zO-6Gv"/>
+                            <constraint firstItem="cdW-ob-LPt" firstAttribute="centerY" secondItem="Aa9-MW-GMj" secondAttribute="centerY" id="rYf-gg-exJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Aa9-MW-GMj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6Xn-0q-rbK"/>
+                    <constraint firstAttribute="bottom" secondItem="Aa9-MW-GMj" secondAttribute="bottom" id="FY4-Jx-eRS"/>
+                    <constraint firstAttribute="trailing" secondItem="Aa9-MW-GMj" secondAttribute="trailing" id="RDv-VR-rbe"/>
+                    <constraint firstItem="Aa9-MW-GMj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xhM-aw-LzY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgIconleft" destination="cdW-ob-LPt" id="lCg-ZC-pf9"/>
+                <outlet property="imgItemIcon" destination="FRK-GL-A7l" id="97P-k1-Lqc"/>
+                <outlet property="imgItemIconHeightConstraint" destination="trz-G1-wmM" id="kfj-Qp-hh0"/>
+                <outlet property="imgItemIconWidthConstraint" destination="trn-2B-yRe" id="lYv-hu-tuc"/>
+                <outlet property="img_deleteInfo" destination="LG2-ZE-1FX" id="3Iz-9z-WIN"/>
+                <outlet property="lblItemText" destination="rtA-o3-GaO" id="YeA-Cf-4iT"/>
+                <outlet property="lblLeftItemText" destination="5XW-Mq-dzw" id="hT4-TZ-fhh"/>
+            </connections>
+            <point key="canvasLocation" x="250" y="300"/>
+        </tableViewCell>
+    </objects>
+</document>
